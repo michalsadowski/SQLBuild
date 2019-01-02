@@ -10,11 +10,17 @@ Requirements:
  
 To run installation start PowerShell as an Administrator and browse to D:\DBA
 Run ./SQL_install.ps1 with following parameters:
+
 $version - possible values: 2008R2, 2012, 2014, 2016, 2017
+
 $edition - possible values: DEV, STD, ENT
+
 $InstanceName - provide name of instance, for default use MSSQLSERVER
+
 $collation - proivde collation for installation e.g. SQL_Latin1_General_CP1_CI_AS
+
 $TCPPort - provide TCP port on which SQL Server will be listening
 
 Example of installation command:
+
 ./SQL_install.ps1 2017 DEV MSSQLSERVER SQL_Latin1_General_CP1_CI_AS 1433
